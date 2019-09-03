@@ -38,5 +38,31 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+const logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+const links = document.querySelectorAll('a');
+links.forEach ((currentValue, i) => (currentValue.textContent = Object.values(siteContent.nav) [i]));
+
+links.forEach((item) => (item.style.color = '#b0b0b0'));
+
+const addLink = document.querySelector('nav');
+
+const newAtag = document.createElement ('a');
+newAtag.textContent = 'Outreach';
+
+const headText = document.querySelector('h1');
+headText.textContent = 'DOM IS AWESOME!';
+
+const header = document.getElementById("cta-img");
+header.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const midImg = document.getElementById("middle-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+const buttonText = document.querySelector ('button');
+
+buttonText.textContent = 'Get Started';
+
+const topContent = document.querySelectorAll('main-content');
+topContent.forEach ((currentValue, i) => (currentValue.textContent = Object.values(siteContent.main-content) [i]));
