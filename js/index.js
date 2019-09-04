@@ -61,8 +61,9 @@ buttonText.textContent = 'Get Started';
 const headerText = document.querySelector('h1');
 headerText.innerText = siteContent.cta.h1;
 
+/// MAIN HEADERS ///
 
-const mainHead = document.querySelectorAll('.text-content *');
+const mainHead = document.querySelectorAll('.text-content');
 
 mainHead[0].textContent = ('h4', siteContent['main-content'] ['features-h4']);
 
@@ -73,6 +74,9 @@ mainHead[2].textContent = ('h4', siteContent['main-content'] ['services-h4']);
 mainHead[3].textContent = ('h4', siteContent['main-content'] ['product-h4']);
 
 mainHead[4].textContent = ('h4', siteContent['main-content'] ['vision-h4']);
+
+
+/// MAIN CONTENT ///
 
 const mainText = document.querySelectorAll('.text-content');
 
